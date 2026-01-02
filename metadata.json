@@ -1,0 +1,12 @@
+
+{
+  "name": "Super Mario Weather World",
+  "short_name": "MarioWeather",
+  "description": "A playful, 8-bit style weather app that uses Gemini's search grounding to 'scrape' real-time forecasts for European capitals and countries, presented in a nostalgic Super Mario aesthetic.",
+  "theme_color": "#5C94FC",
+  "background_color": "#5C94FC",
+  "display": "standalone",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

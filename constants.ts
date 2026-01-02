@@ -1,0 +1,58 @@
+
+import { CityInfo } from './types';
+
+export const EUROPEAN_CITIES: CityInfo[] = [
+  { name: 'Tirana', country: 'Albania' },
+  { name: 'Andorra la Vella', country: 'Andorra' },
+  { name: 'Vienna', country: 'Austria' },
+  { name: 'Minsk', country: 'Belarus' },
+  { name: 'Brussels', country: 'Belgium' },
+  { name: 'Sarajevo', country: 'Bosnia and Herzegovina' },
+  { name: 'Sofia', country: 'Bulgaria' },
+  { name: 'Zagreb', country: 'Croatia' },
+  { name: 'Nicosia', country: 'Cyprus' },
+  { name: 'Prague', country: 'Czech Republic' },
+  { name: 'Copenhagen', country: 'Denmark' },
+  { name: 'Tallinn', country: 'Estonia' },
+  { name: 'Helsinki', country: 'Finland' },
+  { name: 'Paris', country: 'France' },
+  { name: 'Berlin', country: 'Germany' },
+  { name: 'Athens', country: 'Greece' },
+  { name: 'Budapest', country: 'Hungary' },
+  { name: 'Reykjavik', country: 'Iceland' },
+  { name: 'Dublin', country: 'Ireland' },
+  { name: 'Rome', country: 'Italy' },
+  { name: 'Pristina', country: 'Kosovo' },
+  { name: 'Riga', country: 'Latvia' },
+  { name: 'Vaduz', country: 'Liechtenstein' },
+  { name: 'Vilnius', country: 'Lithuania' },
+  { name: 'Luxembourg City', country: 'Luxembourg' },
+  { name: 'Valletta', country: 'Malta' },
+  { name: 'Chisinau', country: 'Moldova' },
+  { name: 'Monaco', country: 'Monaco' },
+  { name: 'Podgorica', country: 'Montenegro' },
+  { name: 'Amsterdam', country: 'Netherlands' },
+  { name: 'Skopje', country: 'North Macedonia' },
+  { name: 'Oslo', country: 'Norway' },
+  { name: 'Warsaw', country: 'Poland' },
+  { name: 'Lisbon', country: 'Portugal' },
+  { name: 'Bucharest', country: 'Romania' },
+  { name: 'San Marino', country: 'San Marino' },
+  { name: 'Belgrade', country: 'Serbia' },
+  { name: 'Bratislava', country: 'Slovakia' },
+  { name: 'Ljubljana', country: 'Slovenia' },
+  { name: 'Madrid', country: 'Spain' },
+  { name: 'Stockholm', country: 'Sweden' },
+  { name: 'Bern', country: 'Switzerland' },
+  { name: 'Kiev', country: 'Ukraine' },
+  { name: 'London', country: 'United Kingdom' },
+  { name: 'Vatican City', country: 'Vatican City' }
+];
+
+export const WEATHER_ICONS = {
+  sunny: '☀️',
+  cloudy: '☁️',
+  rainy: '🌧️',
+  stormy: '⚡',
+  snowy: '❄️'
+};

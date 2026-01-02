@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Super Mario Weather World</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Super Mario Weather World">
+    <meta name="description" content="A nostalgic 8-bit weather forecast experience powered by Gemini AI.">
+    <meta name="theme-color" content="#5C94FC">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Super Mario Weather World">
+    <meta property="og:description" content="Check the weather across Europe in 8-bit style! Powered by Gemini AI.">
+    <meta property="og:image" content="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/wb_sunny/default/48px.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Super Mario Weather World">
+    <meta property="twitter:description" content="Check the weather across Europe in 8-bit style! Powered by Gemini AI.">
+
+    <!-- Mobile App Settings -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/wb_sunny/default/48px.svg">
+
+    <!-- Performance: Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #5C94FC; /* Classic Mario Sky Blue */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Prevent bounce scrolling on mobile for a tighter app feel */
+            overscroll-behavior-y: none;
+        }
+        .mario-font { font-family: 'Press Start 2P', cursive; }
+        
+        /* Pixel borders */
+        .pixel-border {
+            border: 4px solid black;
+            box-shadow: 
+                -4px 0 0 0 black,
+                4px 0 0 0 black,
+                0 -4px 0 0 black,
+                0 4px 0 0 black;
+        }
+
+        .pixel-card {
+            background: white;
+            border: 4px solid black;
+            position: relative;
+        }
+
+        .pixel-card::after {
+            content: '';
+            position: absolute;
+            top: -4px; left: -4px; right: -4px; bottom: -4px;
+            border: 4px solid black;
+            pointer-events: none;
+        }
+
+        /* Mario Grass Pattern */
+        .grass {
+            background: linear-gradient(0deg, #70C000 0%, #70C000 50%, #48A000 50%, #48A000 100%);
+            background-size: 100% 20px;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating { animation: float 3s ease-in-out infinite; }
+
+        @keyframes mario-walk {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(110vw); }
+        }
+        .mario-sprite {
+            position: fixed;
+            bottom: 60px;
+            width: 32px;
+            height: 32px;
+            image-rendering: pixelated;
+            z-index: 10;
+        }
+        
+        /* Smooth fade-in for page content */
+        #root {
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
